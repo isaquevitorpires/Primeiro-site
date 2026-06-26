@@ -1,17 +1,145 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
-   <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>blog</title>
-    </head>
-    <body>
-        <h1>Meu blog tech</h1>
-        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Futebol</title>
+    <style>
+        /* Configurações Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-         <p>por isaque vitor pires</p>
-         <h2>meu primeiro pots</h2>
-         <p>boas-vindas ao meu novo blog!aqui vou compartilhar dicas de programacao e curiosidades da area da tecnologia.</p>
-    </body>
+        /* Cabeçalho e Menu */
+        header {
+            background-color: #006400; /* Verde campo de futebol */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #006400;
+            padding-bottom: 5px;
+            color: #006400;
+        }
+
+        /* Cartões de Notícias */
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Área de Jogos */
+        .jogo {
+            background: #e2e2e2;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .vs {
+            color: red;
+        }
+
+        .data {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>⚽ Central do Futebol</h1>
+        <nav>
+            <ul>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#jogos">Próximos Jogos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="noticias">
+            <h2>Últimas Notícias</h2>
+            <article class="card">
+                <h3>Grande Final se Aproxima</h3>
+                <p>Os times finalistas se preparam para o confronto decisivo deste fim de semana.</p>
+            </article>
+            <article class="card">
+                <h3>Mercado da Bola</h3>
+                <p>Novo craque internacional assina contrato milionário com time local.</p>
+            </article>
+        </section>
+
+        <section id="jogos">
+            <h2>Próximos Jogos</h2>
+            <div class="jogo">
+                <span class="time">Time A</span>
+                <span class="vs">X</span>
+                <span class="time">Time B</span>
+                <span class="data">Sábado - 16h</span>
+            </div>
+            <div class="jogo">
+                <span class="time">Time C</span>
+                <span class="vs">X</span>
+                <span class="time">Time D</span>
+                <span class="data">Domingo - 19h</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Meu Site de Futebol. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
 </html>
